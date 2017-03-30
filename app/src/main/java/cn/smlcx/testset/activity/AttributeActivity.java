@@ -6,22 +6,27 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package cn.smlcx.testset;
+package cn.smlcx.testset.activity;
 
-import android.test.InstrumentationTestCase;
-import android.util.Log;
-
-import static org.junit.Assert.assertEquals;
+import cn.smlcx.testset.R;
 
 /**
  * Created by Administrator on 2017/3/30.
  */
 
-public class MyTest extends InstrumentationTestCase {
-    public void Test() throws Exception{
-        final int expected = 1;
-        final int reality = 5;
-        assertEquals(expected, reality);
+public class AttributeActivity extends BaseActivity {
+    @Override
+    protected void initViews() {
 
+    }
+
+    @Override
+    protected void initDatas() {
+
+    }
+
+    @Override
+    protected int attachLayoutRes() {
+        return R.layout.activity_attribute;
     }
 }

@@ -13,6 +13,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.blankj.utilcode.util.DeviceUtils;
+
 import butterknife.BindView;
 import butterknife.OnClick;
 import cn.smlcx.testset.R;
@@ -25,7 +27,7 @@ public class MainActivity extends BaseActivity {
     @BindView(R.id.exit)
     Button mExit;
 
-    @OnClick({R.id.login,R.id.regist,R.id.lock,R.id.toolbar,R.id.switchBtn,R.id.exit})
+    @OnClick({R.id.login,R.id.regist,R.id.lock,R.id.toolbar,R.id.switchBtn,R.id.attributes,R.id.exit})
     void registOnClick(View view) {
         switch (view.getId()){
             case R.id.login:
@@ -48,6 +50,10 @@ public class MainActivity extends BaseActivity {
                 Intent intent5 = new Intent(this, SwitchActivity.class);
                 startActivity(intent5);
                 break;
+            case R.id.attributes:
+                Intent intent6 = new Intent(this, AttributeActivity.class);
+                startActivity(intent6);
+                break;
             case R.id.exit:
                 Log.e("login", "点击退出");
                 app.getInstance().finishActivity();
@@ -66,7 +72,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initViews() {
-
+        Log.e("Main", "initViews: "+ DeviceUtils.getMacAddress());
     }
 
     @Override

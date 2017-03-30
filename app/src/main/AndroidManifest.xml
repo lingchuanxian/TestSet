@@ -25,6 +25,7 @@
                   android:launchMode="singleTask"/>
         <activity android:name=".activity.ToolBarActivity"/>
         <activity android:name=".activity.SwitchActivity"/>
+        <activity android:name=".activity.AttributeActivity"/>
     </application>
 
 </manifest>

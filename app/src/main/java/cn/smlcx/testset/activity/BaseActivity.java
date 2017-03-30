@@ -6,6 +6,8 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.blankj.utilcode.util.Utils;
+
 import butterknife.ButterKnife;
 import cn.smlcx.testset.app.ApplicationEx;
 import cn.smlcx.testset.view.IBaseView;
@@ -24,7 +26,7 @@ public abstract class BaseActivity extends Activity implements IBaseView{
         ButterKnife.bind(this);
         app = (ApplicationEx) getApplication();
         app.addActivity(this);
-
+        Utils.init(this);
         EventBus.getDefault().register(this);
         initViews();
         initDatas();

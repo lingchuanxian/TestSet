@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AttributeView">
+        <attr name="lcx_age" format="integer"/>
+        <attr name="lcx_name" format="string"/>
+        <attr name="lcx_bg" format="reference|color"/>
+    </declare-styleable>
+
+</resources>
