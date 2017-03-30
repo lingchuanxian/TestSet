@@ -55,7 +55,6 @@ public abstract class BaseActivity extends Activity implements IBaseView{
 
     @Override
     public void hideLoading() {
-
     }
 
     public void onEventMainThread(Integer i){
