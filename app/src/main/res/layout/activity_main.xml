@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:background="@xml/button_border"
-            android:text="注册"/>
+            android:text="RxJava"/>
 
         <Button
             android:id="@+id/lock"
@@ -55,6 +55,21 @@
             android:layout_height="35dp"
             android:background="@xml/button_border"
             android:text="自定义属性"/>
+
+        <Button
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@xml/button_border"
+            android:text="recyclerview"/>
+
+        <Button
+            android:id="@+id/materialdialogs"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@xml/button_border"
+            android:text="material-dialogs"/>
+
 
         <Button
             android:id="@+id/exit"

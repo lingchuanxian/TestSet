@@ -1,6 +1,7 @@
 package cn.smlcx.testset.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
@@ -19,6 +20,7 @@ import de.greenrobot.event.EventBus;
 
 public abstract class BaseActivity extends Activity implements IBaseView{
     public ApplicationEx app;
+    public Context mContext;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,7 @@ public abstract class BaseActivity extends Activity implements IBaseView{
         app.addActivity(this);
         Utils.init(this);
         EventBus.getDefault().register(this);
+        mContext = this;
         initViews();
         initDatas();
     }
